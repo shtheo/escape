@@ -1,0 +1,559 @@
+<html>
+
+<head>
+	<title>
+		Chasse au trésor de l'anniv de la Clara
+	</title>
+	<meta charset="UTF-8">
+	<style  type="text/css">
+		h1{
+			text-align: center;
+		}
+		body{
+			font-family: Century Gothic,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+			background-color: #28242b;
+			color: #fff9f0;
+		}
+		.paragraphe-intro{
+			margin-bottom: 20px;
+			text-align: justify;
+		}
+		.section{
+			border: solid 1px #fff9f0;
+			border-radius: 20px;
+			padding: 30px;
+			background-color: #373a52;
+			margin-bottom: 20px;
+		}
+		.global-container{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.image-centre{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.clepsydre{
+			border-radius: 20px;
+			cursor: pointer;
+		}
+		.indice{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			width: 60%;
+			background-color: #e6d59a;
+			color: black;
+			font-weight: 700;
+			border: 3px solid #705127;
+			border-radius: 3px;
+			padding: 20px;
+			font-size: 16;
+			margin-bottom: 20px;
+		}
+		iframe{
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="global-container">
+	<h1>Ordre de mission</h1>
+	<div class="section">
+		<div class="paragraphe-intro">
+			<p>
+				Bonjour Clara,
+			</p>
+			<p>
+				Avoir 22 ans c'est un cap dans une vie. <br/>
+				Mais mérites-tu vraiment cet âge aussi banal soit-il ? 
+				Ton passé et ton présent se sont réunis, Dinogaïa a parlé au Shérif de Nottingham. 
+				Lui même en a touché un mot à Jey-Jey qui s'est vu obligé d'en informer Marry Poppins. <br/>
+				Enfin bref, ce conseil réuni a décidé de te faire passer une épreuve afin que tu puisses prouver que tu es réellement plus mature qu'il y a 5 ans. <br/>
+				Mais quelle est cette épreuve te poses-tu comme question ? <br/>
+				Dinogaïa voulait une quête digne de Moloke, le Shérif de Nottingham voulait une utilisation de ton passé, 
+				Marry Poppins voulait utiliser tes pouvoirs magiques et Jey-Jey tes connaissances en bonnes musiques des années 2000 à nos jours.<br/> 
+			</p>
+			<img class="image-centre" src="discussion1.png">
+			<p>
+				Ils se sont finalement mis d'accord sur ce qui sera ta mission : Une Chasse Aux Trésor !
+			</p>
+			<img class="image-centre" src="discussions2.png">
+		</div>
+		<div class="paragraphe-intro">
+			<p>
+				Voici comment cela va se dérouler...
+			</p>
+			<p>
+				12 lieux seront à découvrir, sur chacun des 11 premiers lieux tu trouveras une énigme à résoudre. <br/>
+				Dès que tu auras la réponse, il faudra te rendre à nouveau sur cette application et entrer la réponse dans la zone de texte appropriée.<br/>
+				Si la réponse est la bonne, un nouvel indice te sera donné pour trouver le lieu suivant.<br/>
+				Les réponses sont soit des nombres entiers, soit un mot. Pas de phrase ni de mots composés ne sont attendus. 
+				Si la réponse est un mot, il faut l'écrire en caractères minuscules.<br/>
+				Le 12ème lieu ne contient pas d'énigme mais "une surprise" qui achevera ta quête. <br/>
+			</p>
+		</div>
+		<div class="paragraphe-intro">
+			<p>
+				Avant de partir pour cette chasse au trésor il faudra t'équiper des choses suivantes :
+				<ul>
+					<li>Ton cerveau, c'est ton meilleur ami pour cette épreuve</li>
+					<li>Ton téléphone portable mais seules les applications appel, sms et Google Maps sont autorisées</li>
+					<li>La calculatrice est interdite, tous les calculs se font de tête, éventuellement sur papier</li>
+					<li>Mets le son de cet ordi sur 60%</li>
+					<li>Le doudou de ton choix dans la valise à doudous (il te protégera si besoin)</li>
+				</ul>
+			</p>
+		</div>
+		<div class="paragraphe-intro">
+			<img src="yoda.gif" class="image-centre">
+			<p>
+				Dès que tu est prête, appuie sur la clepsydre. L'indice du premier lieu devrait apparaître. <br/>
+				May the force be with you !
+			</p>
+			<img src="clepsydre.jpg" class="image-centre clepsydre" width="100" onclick="showFirst()">
+		</div>
+		<div>
+		</div>
+	</div>
+	<div class="section" id="1" hidden="hidden">
+		<h2>Avancement de la chasse : 1/12</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Et c'est partiiiiiiiiiiiiiiii pour le SHOOOOOOOOOOOWW !!!<br/><br/>
+					<audio
+				controls
+				id="audioPlayer"
+				src="cparti.mp3">
+					Your browser does not support the
+					<code>audio</code> element.
+			</audio>
+			</p><br/><br/>
+			<p>
+				Tu peux mettre le player en pause pour mieux te concentrer.<br/>
+				Voici donc ton premier indice, trouve le lieu qu'il indique et vas-y.<br/>
+				Une fois sur place, cherche un morceau de papier.<br/>
+				Il contient une énigme.<br/>
+				Résous-la et marque la réponse dans la zone de texte plus bas...
+			</p>
+		</div>
+			<div class="indice">
+				Je suis une application mais aussi physique.<br/>
+				A une chance sur 4 je joue de la musique...
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-1" type="text">
+			<button onclick="verifiyAnswer(1)">Valider</button>
+			<div id="wrong-answer-1" hidden="hidden">
+				<span id="entered-value-1"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="2" hidden="hidden">
+		<h2>Avancement de la chasse : 2/12</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Bien joué la Clara du 1 au 9, le changement de sens, le saute ton tour et le plus 2. 
+				Sans oublier que chaque carte est présente 2 fois, sinon nos histoires de saute-mouton ne serviraient à rien.<br/><br/>
+				Allez, nouveau lieu, nouvel indice...
+			</p>
+		</div>
+			<div class="indice">
+				On me laisse ouvert, je pue.<br/>
+				On m'éteint, je pue.<br/>
+				A vider en période de confinement...
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-2" type="text">
+			<button onclick="verifiyAnswer(2)">Valider</button>
+			<div id="wrong-answer-2" hidden="hidden">
+				<span id="entered-value-2"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="3" hidden="hidden">
+		<h2>Avancement de la chasse : 3/12</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Et oui bien joué la Clara ! On se voit la réponse en image...
+			</p>
+		</div>
+		<iframe width="853" height="480" src="https://www.youtube.com/embed/KSHxNEb1b7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="paragraphe-intro">
+			<p>
+				Trêve de plaisanterie... <br/>
+				Olivier Minne veut tester tes capacités à trouver le mot code. 
+			</p>
+		</div>
+		<img src="discussions3.png" class="image-centre">
+		<div class="paragraphe-intro">
+			<p>
+				Trouve donc ce mode code, il te ménera au prochain lieu...
+			</p>
+		</div>
+		<div class="indice">
+			SIXT <br/>
+			TRESOR <br/>
+			VOITURE
+		</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-3" type="text">
+			<button onclick="verifiyAnswer(3)">Valider</button>
+			<div id="wrong-answer-3" hidden="hidden">
+				<span id="entered-value-3"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="4" hidden="hidden">
+		<h2>Avancement de la chasse : 4/12</h2>
+		<div class="paragraphe-intro">
+			Bien Joué la Clara ! <br/>
+			Je pense que tu as bien prouvé à ce cher Olivier tes compétences en mot code. 
+		</div>
+		<img src="discussions4.png" class="image-centre">
+		<div class="paragraphe-intro">
+			<p>
+				Voici l'énigme du Père Fouras pour le prochain lieu...
+			</p>
+		</div>
+			<div class="indice">
+				Des bars j'orne les murs<br/>
+				Par 3 elles me piquent<br/>
+				Contrairement aux croyances mon coeur n'est pas le plus cher...
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-4" type="text">
+			<button onclick="verifiyAnswer(4)">Valider</button>
+			<div id="wrong-answer-4" hidden="hidden">
+				<span id="entered-value-4"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="5" hidden="hidden">
+		<h2>Avancement de la chasse : 5/12</h2>
+		<div class="paragraphe-intro">
+			J'avoue que celle-ci n'étaient pas simple à faire sans calculatrice. <br/>
+			On ne remerciera jamais aussez Gauss pour cette formule de la somme des nombres de 1 à n qui vaut n(n+1)/2.<br/>
+			Pour chaque nombre il y a 2 moceaux équivalent au simple, 1 au double et un au triple. Ce qui fait qu'on a chaque nombre 7 fois<br/>
+			Ainsi, on a bien : (20*21/2)*7 = 1470<br/>
+			Sans oublier le centre rouge et bleu qui valent 75 en tout, cela nous donne 1545. 
+		</div>
+		<div class="paragraphe-intro">
+			Tu commences à prendre ton rythme... <br/>
+			Nous allons attaquer les indices de lieux et des énigmes un peu plus corsés.<br/>
+			Voici le suivant...<br/>
+		</div>
+			<div class="indice">
+				44°40'00.0''N<br/>
+				4°22'00.0''E
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-5" type="text">
+			<button onclick="verifiyAnswer(5)">Valider</button>
+			<div id="wrong-answer-5" hidden="hidden">
+				<span id="entered-value-5"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="6" hidden="hidden">
+		<h2>Avancement de la chasse : 6/12</h2><br/>
+		<audio
+				controls
+				id="audioPlayer2"
+				src="madonna-sorry.mp3">
+					Your browser does not support the
+					<code>audio</code> element.
+			</audio><br/><br/>
+		<div class="paragraphe-intro">
+			Bien joué la Clara ! <br/>
+			On a hésité avec Give me all your luvin' et Hollywood mais c'est bien avec cette chanson MODERNE que tu nous as tant fait JAZZé. <br/>
+			MDRRR ta kompri ? hahhaha. <br/>
+			Tu peux mettre le player en pause à présent.<br/>
+			Il semblerait que pour la prochaine épreuve Marry Poppins veuille tester des capacités en anglais...
+		</div>
+		<img src="discussions5.png" class="image-centre">
+		<br/>
+		<br/>
+		<img src="discussions6.png" class="image-centre">
+		<br/>
+		<br/>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-6" type="text">
+			<button onclick="verifiyAnswer(6)">Valider</button>
+			<div id="wrong-answer-6" hidden="hidden">
+				<span id="entered-value-6"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="7" hidden="hidden">
+		<h2>Avancement de la chasse : 7/12</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Et oui, la planète suivante était bien Saturne...<br/>
+				Pour le nouveau lieu à trouver, c'est cette personne qui a voulu te poser une question.<br/>
+			</p>
+		</div>
+		<img src="discussions7.PNG" class="image-centre">
+		<div>
+			<p>
+				Voici donc la question d'Alain.
+			</p>
+		</div>
+			<div class="indice">
+				Newton est son inventeur, de quoi s'agit-il ?
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-7" type="text">
+			<button onclick="verifiyAnswer(7)">Valider</button>
+			<div id="wrong-answer-7" hidden="hidden">
+				<span id="entered-value-7"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="8" hidden="hidden">
+		<h2>Avancement de la chasse : 8/12</h2><br/>
+		<audio
+				controls
+				id="audioPlayer3"
+				src="despacito.mp3">
+					Your browser does not support the
+					<code>audio</code> element.
+			</audio><br/><br/>
+		<div class="paragraphe-intro">
+			Bravo Clara ! Viste que no es inglés sino español. No caíste en la trampa.<br/>
+			Tu peux mettre le player en pause à présent.<br/>
+			Mais faire de l'anglais et de l'espagnol ne plaît pas à tout le monde.
+		</div>
+		<img src="discussions8.png" class="image-centre">
+		<div class="paragraphe-intro">
+			<p>
+				Voici donc la chanson à trouver...
+			</p>
+		</div>
+			<div class="indice">
+				There is one month maybe<br/>
+				Arrived by mistake<br/>
+				Postman clumsiness
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-8" type="text">
+			<button onclick="verifiyAnswer(8)">Valider</button>
+			<div id="wrong-answer-8" hidden="hidden">
+				<span id="entered-value-8"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="9" hidden="hidden">
+		<h2>Avancement de la chasse : 9/12</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Ronpschit Ernest Tigrette Topla Bijou Hamiral et Chapo !<br/>
+				 C'est très bien joué !<br/>
+			 	Regardons la réponse en images...
+			</p>
+		</div>
+		<iframe width="640" height="480" src="https://www.youtube.com/embed/FskOg48omoE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="paragraphe-intro">
+			<p>
+				Mais j'entends le Père Fouras arriver... Une autre énigme à te poser il a... 
+			</p>
+		</div>
+			<div class="indice">
+				Sans être fou, il a un grain.<br/>
+				Après le grill, il va au moulin.<br/>
+				Il fait parfois bien du chemin pour être blanchi le matin.
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-9" type="text">
+			<button onclick="verifiyAnswer(9)">Valider</button>
+			<div id="wrong-answer-9" hidden="hidden">
+				<span id="entered-value-9"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="10" hidden="hidden">
+		<h2>Avancement de la chasse : 10/12</h2>
+		<div class="paragraphe-intro">
+			Et oui, c'est le bon vieux Monsieur Chêne qui serait fier de toi.<br/>
+			Suite géométrique de premier terme U0 = 3 et de raison 5.<br/>
+			96 était donc bien la bonne réponse !<br/>
+		</div>
+		<div class="paragraphe-intro">
+			Pépé Pierre te l'a souvent répété, la lecture c'est très important.<br/>
+			Et c'est donc un livre que tu vas devoir chercher.<br/>
+			Mais lequel te demandes-tu ? Cette maison en possède tellement.<br/>
+			L'indice suivant pourra peut-être t'éclairer....
+		</div>
+			<div class="indice">
+				L'as de trêfle qui pique ton coeur n'est pas leur escargot<br/>
+				Mais ne va pas bien plus vite
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-10" type="text">
+			<button onclick="verifiyAnswer(10)">Valider</button>
+			<div id="wrong-answer-10" hidden="hidden">
+				<span id="entered-value-10"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="11" hidden="hidden">
+		<h2>Avancement de la chasse : 11/12</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Ouuuuui ! Marry Poppins est très fière de toi. <br/>
+				On sent que l'entrainement à l'épellothon a bien servi ! #cranium <br/>
+				On se voit la réponse en musique...
+			</p>
+		</div>
+		<iframe width="853" height="480" src="https://www.youtube.com/embed/2BduV7k5W-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="paragraphe-intro">
+			<p>
+				On passe à l'avant dernière épreuve.<br/>
+				C'est sans conteste la plus dure...<br/>
+				Certains sont morts sans avoir eu le temps de la résoudre...<br/>
+				Il s'agit d'une charade.<br/>
+				La réponse à celle-ci te donnera un indice sur le prochain lieu...
+			</p>
+		</div>
+			<div class="indice">
+				Mon premier est "L'H2O"<br/>
+				Mon deuxième n'est ni SFR ni Free<br/>
+				Mon troisième c'est "ici" dit par les gens du WATI B<br/>
+				Mon quatrième nous pollue l'air<br/>
+				Mon tout est une personnalité française<br/>
+				Qui suis-je ?
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-11" type="text">
+			<button onclick="verifiyAnswer(11)">Valider</button>
+			<div id="wrong-answer-11" hidden="hidden">
+				<span id="entered-value-11"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="12" hidden="hidden">
+		<h2>Avancement de la chasse : 12/12</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Bien joué la Clara !<br/>
+				Pas grand chose de plus à ajouter, comme le disait Alain Matonne, tous les ingéridents étaient là pour réussir.<br/>
+				Nous voilà donc au dernier palier de cette chasse au trésor, le temps est passé tellement vite...
+			</p>
+		</div>
+		<img src="discussions9.png" class="image-centre">
+		<br/>
+		<br/>
+		<img src="discussions10.png" class="image-centre">
+		<br/>
+		<div class="paragraphe-intro">
+			<p>
+				Regarde attentivement cette vidéo...
+			</p>
+		</div>
+		<iframe width="853" height="480" src="https://www.youtube.com/embed/zInC3pcoT8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div>
+			<p>
+				Un animal a été mentionné dans cette vidéo.<br/>
+				Rends-toi à présent dans la partie de la maison qui contenant le plus de cet animal entre 2007 et 2015...<br/>
+				C'est là que réside la surprise...
+			</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">  
+	function showFirst(){
+		var firstIndication = document.getElementById("1");
+		firstIndication.hidden = false;
+		firstIndication.scrollIntoView();
+		var player = document.querySelector('#audioPlayer');
+		player.play();
+		player.currentTime = 34;
+	}
+	function verifiyAnswer(nbQuestion){
+		switch (nbQuestion) {
+			case 1:
+				verifyAnswerSpecific(1, '210')
+				break;
+			case 2:
+				verifyAnswerSpecific(2, '394')
+				break;
+			case 3:
+				verifyAnswerSpecific(3, 'lune')
+				break;
+			case 4:
+				verifyAnswerSpecific(4, '1545')
+				break;
+			case 5:
+				var rep = verifyAnswerSpecific(5, 'sorry');
+				if (rep){
+					var player = document.querySelector('#audioPlayer2');
+					player.play();
+					player.currentTime = 47;
+				}
+				break;
+			case 6:
+				verifyAnswerSpecific(6, 's')
+				break;
+			case 7:
+				var rep = verifyAnswerSpecific(7, 'despacito');
+				if (rep){
+					var player = document.querySelector('#audioPlayer3');
+					player.play();
+					player.currentTime = 19;
+				}
+				break;
+			case 8:
+				verifyAnswerSpecific(8, 'chapo')
+				break;
+			case 9:
+				verifyAnswerSpecific(9, '96')
+				break;
+			case 10:
+				verifyAnswerSpecific(10, 'supercalifragilisticexpialidocious')
+				break;
+			case 11:
+				verifyAnswerSpecific(11, '178')
+				break;
+		}
+	}
+
+	function verifyAnswerSpecific(nbQuestion, answer){
+		var value = document.getElementById("input-".concat(nbQuestion.toString())).value;
+		var wrongAnswer = document.getElementById("wrong-answer-".concat(nbQuestion.toString()));
+		if (value == answer){
+			var nextIndication = document.getElementById((nbQuestion + 1).toString());
+			wrongAnswer.hidden = true;
+			nextIndication.hidden = false;
+			nextIndication.scrollIntoView();
+			return true;
+		}
+		else{
+			var spanValue = document.getElementById("entered-value-".concat(nbQuestion.toString()));
+			spanValue.textContent = value;
+			wrongAnswer.hidden = false;
+			return false;
+		}
+	}
+</script>
+</body>
+
+</html>
